@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Số nguyên tố</title>
+</head>
+<body>
+<script type="text/javascript">
+	function songuyento(number) {
+		if (number < 2) {
+			return false;
+	 	}
+	 	if (number ==2) {
+	 		return true;
+	 	}
+	 	for (let i = 2; i < number; i++) {
+	 		if (number%i == 0) {
+	 			return false;
+	 		}
+	 	}
+
+	 	return true;
+	}
+	
+	let i =0;
+	while(i<10000){
+		if(songuyento(i)===true){
+			document.write(i+" là số nguyên tố" +"<br>");
+		}
+		i++;
+	}
+</script>
+</body>
+</html>

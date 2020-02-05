@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let str =['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+	let star =['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+	let search = prompt("Nhập tên ngôi sao:");
+	let flag = false;
+	function searchStar(search) {
+		for(let j=0;j<star.length;j++){
+				if(search === star[j]){
+					alert(str[j]);
+					flag = true;
+					break;
+					}
+			}
+			if(flag==false){
+				alert('Không tồn tại ngôi sao');
+			}
+		}
+		searchStar(search);
+</script>
+</body>
+</html>

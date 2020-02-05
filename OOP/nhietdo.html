@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nhiệt độ</title>
+</head>
+<body>
+<script type="text/javascript">
+	class Temperature{
+		constructor(c){
+			this.c=c;
+		}
+		cToF(){
+			return (9*this.c)/5 + 32;
+		}
+	}
+	let temperature = new Temperature(25);
+	document.write('Nhiệt độ Kelvin là: '+temperature.cToF()+' độ F');
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giai thừa</title>
+</head>
+<body>
+<script type="text/javascript">
+	let num = + prompt(" nhập số:");
+    let f = 1;
+	function giaiThua(num) {
+		if(num<=0){
+    	num = +prompt(" nhập số:");
+    		if (num == 1) {
+            document.write("Giai thừa của "+ num +" là: " + f);
+        	}else {
+    	 		for(let i=2;i<=num;i++){
+    			f *= i;	
+       			}document.write("Giai thừa của "+ num +" là: " + f);
+			}
+		}
+	}
+	giaiThua(num);
+</script>
+</body>
+</html>

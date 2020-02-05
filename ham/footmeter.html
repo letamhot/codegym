@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FeetMeter</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	
+	function footToMeter() {
+		let meter=+prompt("Nhập meter:");
+		let foot;
+		if(foot<=0){
+			document.write("Không có giá trị phù hợp");
+		}else{
+				foot = 3.279 * meter;
+		}document.write("Giá trị foot là:" + foot);
+	}
+	function meterToFoot(){
+		let foot =+prompt("Nhập feet:");
+		let meter;
+		if(meter<=0){
+			document.write("Không có giá trị phù hợp");
+		}else{
+			 meter = 0.305 * foot;
+		}document.write("Giá trị meter là:" + meter);
+	}
+
+</script>
+<button onclick="footToMeter()">FootToMeter</button>
+<button onclick="meterToFoot()">MeterToFoot</button>
+</body>
+</html>

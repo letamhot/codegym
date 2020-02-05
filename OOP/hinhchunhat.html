@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hình chữ nhật</title>
+</head>
+<body>
+<script type="text/javascript">
+
+class Rectangle{
+	constructor(x, y, a, b){
+	   this.x = x;
+	   this.y = y;
+	   this.a = a;
+	   this.b = b;
+	}
+	createRectangle(){
+    let c = document.getElementById("myCanvas");
+	let ctx = c.getContext("2d");
+    ctx.fillRect(500,500,20,10);
+	}
+	perimeter(){
+		return (this.a + this.b)*2;
+	}
+	area(){
+		return this.a * this.b;
+	}
+
+}
+let rectangle = new Rectangle(500,500,20,10);
+// console.log(rectangle);
+document.write('Chu vi là: '+ rectangle.perimeter()+'<br>');
+document.write('Diện tích là: '+ rectangle.area());
+</script>
+<canvas id="myCanvas" width="50" height="50"></canvas>
+</body>
+</html>
